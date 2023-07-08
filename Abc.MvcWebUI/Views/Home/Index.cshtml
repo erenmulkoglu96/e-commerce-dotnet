@@ -1,0 +1,24 @@
+﻿@using Abc.MvcWebUI.Models;
+@model IEnumerable<ProductModel>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">E - Ticaret</h1>
+        <p class="lead">E-ticaret, dijital ortamda online olarak yapılan ticaret türüdür.</p>
+        <hr class="my-4">
+        <p>Bir e-ticaret sitesi, ürün ve hizmetlerin internetten satılıp alınabileceği bir online mağazadır.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Daha Fazla Bilgi Edinin</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="container pb-5">
+    @Html.Partial("_ProductList", Model)
+</div>
+
+
+
